@@ -1,0 +1,988 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <link rel="shortcut icon" href="assets/img/favicon.ico" type="image/x-icon">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+		<title>Home Page</title>
+    <!-- build:css -->
+    <link rel="stylesheet" href="assets/vendor/css/animate.css">
+    <link rel="stylesheet" href="assets/vendor/css/swiper-bundle.min.css">
+		<link rel="stylesheet" href="assets/css/main.css">
+		<!-- endbuild -->
+    <link rel="stylesheet" href="assets/css/rtl.css">
+  <script src="https://api-maps.yandex.ru/2.1/?apikey=00e1daf7-6d83-47be-9af6-27bd4f488e65&lang=ru_RU"></script>
+
+</head>
+
+<body class="is-home-page">
+    <header class="header js-fixed-total">
+      <div class="header__top">
+        <div class="container">
+          <div class="row align-items-center">
+            <div class="col-lg-9 col-2 position-static">
+              <button class="btn-reset header__burger burger js-toggle-mobile-menu d-xl-none">
+              <span class="burger__lines">
+                    <i>&nbsp;</i><i>&nbsp;</i><i>&nbsp;</i>
+                  </span>
+              </button>
+              <nav class="header__nav header-nav js-mobile-menu">
+                <ul class="header-nav__list">
+                  <li class="header-nav__item"><a href="#production" class="header-nav__link">Продукция</a></li>
+                  <li class="header-nav__item"><a href="#about" class="header-nav__link">О заводе </a></li>
+                  <li class="header-nav__item"><a href="#partners" class="header-nav__link">Оптовикам</a></li>
+                  <li class="header-nav__item"><a href="#reviews" class="header-nav__link">Отзывы</a></li>
+                  <li class="header-nav__item"><a href="#example" class="header-nav__link">Акции</a></li>
+                  <li class="header-nav__item"><a href="#contacts" class="header-nav__link">Где купить</a></li>
+                </ul>
+              </nav>
+            </div>
+            <div class="col-lg-3 col-8">
+              <div class="header__social social">
+                <a href="" class="social__link">
+                  <svg width="21" height="20">
+                    <use xlink:href="assets/img/sprite.svg#icon-tlg"></use>
+                  </svg>
+                </a>
+                <a href="" class="social__link">
+                  <svg width="21" height="20">
+                    <use xlink:href="assets/img/sprite.svg#icon-inst"></use>
+                  </svg>
+                </a>
+                <a href="" class="social__link">
+                  <svg width="21" height="20">
+                    <use xlink:href="assets/img/sprite.svg#icon-vk"></use>
+                  </svg>
+                </a>
+              </div>
+            </div>
+            <div class="col-2 d-lg-none header__mobile-phone">
+              <a class="" href="tel:89265758061" >
+                <svg width="37" height="37">
+                  <use xlink:href="assets/img/sprite.svg#icon-mobile-phone"></use>
+                </svg>
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="header__bottom">
+        <div class="container">
+          <div class="row align-items-center">
+            <div class="col-lg-6">
+              <div class="logo header__logo">
+                <a href="" class="logo__img">
+                  <img src="assets/img/svg/logo.svg" alt="">
+                </a>
+                <p class="logo__slogan">Производство и продажа краски <br> напрямую с завода в Европе <br>
+                  Работаем с 1960 года</p>
+              </div>
+            </div>
+            <div class="col-6 text-lg-right d-none d-lg-block">
+              <a href="tel:89265758061" class="header__phone">+7 (926) 575 80 61</a>
+              <p class="header__worktime">с 09:00 до 18:00 без выходных</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </header>
+    <main role="main" class="main">
+        
+        <section class="hero">
+          <div class="container hero__container">
+            <div class="row align-items-center">
+              <div class="col-lg-7">
+                <h1 class="title-h1 hero__title">Краска в наличие и под заказ напрямую с&nbsp;завода в Греции</h1>
+                <p class="hero__subtitle">Более 10 000 оттенков цветов для внутренних и внешних работ</p>
+                <div class="hero__btns">
+                  <button class="btn btn-reset hero__btn" data-toggle="modal" data-target="#exampleModal">Получить каталог и 5% скидку на&nbsp;первый&nbsp;заказ</button>
+                  <button class="btn btn_trnsp btn-reset hero__btn" data-toggle="modal" data-target="#exampleModal">Спецпредложение для дизайнеров и&nbsp;строителей</button>
+                </div>
+              </div>
+              <div class="col-lg-5 d-none d-lg-block">
+                <img src="assets/img/hero-img.png" alt="" class="hero__img">
+              </div>
+            </div>
+          </div>
+        </section>
+        
+        <section class="production" id="production">
+          <div class="container">
+            <div class="row">
+              <div class="col-xl-7 offset-xl-3">
+                <h2 class="title-h2 title-h2_center production__title">Продукция от европейского
+                  производителя</h2>
+              </div>
+              <div class="col-12">
+                <div class="swiper js-production-nav-slider  production__nav production-nav ">
+                  <ul class="swiper-wrapper production-nav__list nav nav-tabs">
+                    <li class="swiper-slide  nav-item production-nav__item">
+        
+                      <button class="btn-reset production-nav__btn active" data-toggle="tab" data-id="one" data-target="#one">
+                        Для внутренних
+                        работ
+                      </button>
+                    </li>
+                    <li class="swiper-slide  nav-item production-nav__item">
+        
+                      <button class="btn-reset production-nav__btn" data-toggle="tab" data-id="two" data-target="#two">Грунты
+                      </button>
+                    <li class="swiper-slide  nav-item production-nav__item">
+        
+                      <button class="btn-reset production-nav__btn" data-toggle="tab" data-id="three" data-target="#three"> Для
+                        наружных работ
+                      </button>
+        
+                    </li>
+                    <li class="swiper-slide  nav-item production-nav__item">
+        
+                      <button class="btn-reset production-nav__btn" data-toggle="tab" data-id="four" data-target="#four"> Для
+                        дерева
+                      </button>
+        
+                    </li>
+                    <li class="swiper-slide  nav-item production-nav__item">
+        
+                      <button class="btn-reset production-nav__btn" data-toggle="tab" data-id="five" data-target="#five">Для
+                        металла
+                      </button>
+        
+                    </li>
+                    <li class="swiper-slide  nav-item production-nav__item">
+        
+                      <button class="btn-reset production-nav__btn" data-toggle="tab" data-id="six" data-target="#six">Для
+                        камня
+                      </button>
+        
+                    </li>
+                  </ul>
+                  <div class="swiper-button-next production-nav-next"></div>
+                  <div class="swiper-button-prev production-nav-prev"></div>
+                </div>
+              </div>
+              <div class="col-12  tab-content" id="productTabContent">
+                <div class=" tab-pane fade show active" id="one" role="tabpanel">
+                  <div class="swiper production__slider js-production-slider" id="js-production-slider--one">
+                    <div class="swiper-wrapper">
+                      <div class="swiper-slide">
+                        <div class="product-card">
+                          <div class="product-card__img col-6 offset-1">
+                            <img src="assets/img/pr-01.png" alt="">
+                          </div>
+                          <div class="product-card__info col-md-6">
+                            <p class="product-card__title">Acrylic paint</p>
+                            <p class="product-card__description">Премиум, 100% акриловая эмульсионная краска</p>
+                            <div class="product-card__group">
+                              <p class="product-card__txt"><b>Применение</b></p>
+                              <p class="product-card__txt">Наносится на чистую сухую, прогрунтованную поверхность.</p>
+                              <p class="product-card__txt">Наилучший результат достигается при нанесении в два слоя.</p>
+                              <p class="product-card__txt">12-14 м²/л на гладкую поверхность при однослойном покрытии. </p>
+                            </div>
+                            <div class="product-card__group">
+                              <p class="product-card__txt"><b>Высыхание – Нанесение последующего слоя:</b></p>
+                              <p class="product-card__txt">При температуре +20 ºС <br>
+                                время высыхания до отлипа составляет 1-2 часа. Второй слой наносится через 3-4 часа. В
+                                прохладных и влажных условиях допускается более длительное время сушки. Во время нанесения
+                                и высыхания температура должна быть не ниже + 10°С.</p>
+                              <p class="product-card__txt">Без запаха.</p>
+                            </div>
+                            <div class="product-card__group">
+                              <p class="product-card__txt"><b>Цветовые оттенки:</b></p>
+                              <p class="product-card__txt">Доступна в белом цвете. АКРИЛИК ПЕЙНТ может быть колерован в <br>
+                                неограниченное количество оттенков колеровочной системы.</p>
+                            </div>
+                            <div class="product-card__group">
+                              <p class="product-card__txt"><b>Упаковка</b></p>
+                              <p class="product-card__txt">750 мл/ 3 л/ 10 л</p>
+                            </div>
+                            <button class="btn-reset btn product-card__btn">Заказать</button>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="swiper-button-next production-arrow-next"></div>
+                    <div class="swiper-button-prev production-arrow-prev"></div>
+                  </div>
+                </div>
+                <div class=" tab-pane fade" id="two" role="tabpanel">
+                  <div class="swiper production__slider js-production-slider" id="js-production-slider--two">
+                    <div class="swiper-wrapper">
+                      <div class="swiper-slide">
+                        <div class="product-card">
+                          <div class="product-card__img col-6 offset-1">
+                            <img src="assets/img/pr-01.png" alt="">
+                          </div>
+                          <div class="product-card__info col-md-6">
+                            <p class="product-card__title">Acrylic paint</p>
+                            <p class="product-card__description">Премиум, 100% акриловая эмульсионная краска</p>
+                            <div class="product-card__group">
+                              <p class="product-card__txt"><b>Применение</b></p>
+                              <p class="product-card__txt">Наносится на чистую сухую, прогрунтованную поверхность.</p>
+                              <p class="product-card__txt">Наилучший результат достигается при нанесении в два слоя.</p>
+                              <p class="product-card__txt">12-14 м²/л на гладкую поверхность при однослойном покрытии. </p>
+                            </div>
+                            <div class="product-card__group">
+                              <p class="product-card__txt"><b>Высыхание – Нанесение последующего слоя:</b></p>
+                              <p class="product-card__txt">При температуре +20 ºС <br>
+                                время высыхания до отлипа составляет 1-2 часа. Второй слой наносится через 3-4 часа. В
+                                прохладных и влажных условиях допускается более длительное время сушки. Во время нанесения
+                                и высыхания температура должна быть не ниже + 10°С.</p>
+                              <p class="product-card__txt">Без запаха.</p>
+                            </div>
+                            <div class="product-card__group">
+                              <p class="product-card__txt"><b>Цветовые оттенки:</b></p>
+                              <p class="product-card__txt">Доступна в белом цвете. АКРИЛИК ПЕЙНТ может быть колерован в <br>
+                                неограниченное количество оттенков колеровочной системы.</p>
+                            </div>
+                            <div class="product-card__group">
+                              <p class="product-card__txt"><b>Упаковка</b></p>
+                              <p class="product-card__txt">750 мл/ 3 л/ 10 л</p>
+                            </div>
+                            <button class="btn-reset btn product-card__btn">Заказать</button>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="swiper-button-next production-arrow-next"></div>
+                    <div class="swiper-button-prev production-arrow-prev"></div>
+                  </div>
+                </div>
+                <div class=" tab-pane fade" id="three" role="tabpanel">
+                  <div class="swiper production__slider js-production-slider" id="js-production-slider--three">
+                    <div class="swiper-wrapper">
+                      <div class="swiper-slide">
+                        <div class="product-card">
+                          <div class="product-card__img col-6 offset-1">
+                            <img src="assets/img/pr-01.png" alt="">
+                          </div>
+                          <div class="product-card__info col-md-6">
+                            <p class="product-card__title">Acrylic paint</p>
+                            <p class="product-card__description">Премиум, 100% акриловая эмульсионная краска</p>
+                            <div class="product-card__group">
+                              <p class="product-card__txt"><b>Применение</b></p>
+                              <p class="product-card__txt">Наносится на чистую сухую, прогрунтованную поверхность.</p>
+                              <p class="product-card__txt">Наилучший результат достигается при нанесении в два слоя.</p>
+                              <p class="product-card__txt">12-14 м²/л на гладкую поверхность при однослойном покрытии. </p>
+                            </div>
+                            <div class="product-card__group">
+                              <p class="product-card__txt"><b>Высыхание – Нанесение последующего слоя:</b></p>
+                              <p class="product-card__txt">При температуре +20 ºС <br>
+                                время высыхания до отлипа составляет 1-2 часа. Второй слой наносится через 3-4 часа. В
+                                прохладных и влажных условиях допускается более длительное время сушки. Во время нанесения
+                                и высыхания температура должна быть не ниже + 10°С.</p>
+                              <p class="product-card__txt">Без запаха.</p>
+                            </div>
+                            <div class="product-card__group">
+                              <p class="product-card__txt"><b>Цветовые оттенки:</b></p>
+                              <p class="product-card__txt">Доступна в белом цвете. АКРИЛИК ПЕЙНТ может быть колерован в <br>
+                                неограниченное количество оттенков колеровочной системы.</p>
+                            </div>
+                            <div class="product-card__group">
+                              <p class="product-card__txt"><b>Упаковка</b></p>
+                              <p class="product-card__txt">750 мл/ 3 л/ 10 л</p>
+                            </div>
+                            <button class="btn-reset btn product-card__btn">Заказать</button>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="swiper-button-next production-arrow-next"></div>
+                    <div class="swiper-button-prev production-arrow-prev"></div>
+                  </div>
+                </div>
+                <div class=" tab-pane fade" id="four" role="tabpanel">
+                  <div class="swiper production__slider js-production-slider" id="js-production-slider--four">
+                    <div class="swiper-wrapper">
+                      <div class="swiper-slide">
+                        <div class="product-card">
+                          <div class="product-card__img col-6 offset-1">
+                            <img src="assets/img/pr-01.png" alt="">
+                          </div>
+                          <div class="product-card__info col-md-6">
+                            <p class="product-card__title">Acrylic paint</p>
+                            <p class="product-card__description">Премиум, 100% акриловая эмульсионная краска</p>
+                            <div class="product-card__group">
+                              <p class="product-card__txt"><b>Применение</b></p>
+                              <p class="product-card__txt">Наносится на чистую сухую, прогрунтованную поверхность.</p>
+                              <p class="product-card__txt">Наилучший результат достигается при нанесении в два слоя.</p>
+                              <p class="product-card__txt">12-14 м²/л на гладкую поверхность при однослойном покрытии. </p>
+                            </div>
+                            <div class="product-card__group">
+                              <p class="product-card__txt"><b>Высыхание – Нанесение последующего слоя:</b></p>
+                              <p class="product-card__txt">При температуре +20 ºС <br>
+                                время высыхания до отлипа составляет 1-2 часа. Второй слой наносится через 3-4 часа. В
+                                прохладных и влажных условиях допускается более длительное время сушки. Во время нанесения
+                                и высыхания температура должна быть не ниже + 10°С.</p>
+                              <p class="product-card__txt">Без запаха.</p>
+                            </div>
+                            <div class="product-card__group">
+                              <p class="product-card__txt"><b>Цветовые оттенки:</b></p>
+                              <p class="product-card__txt">Доступна в белом цвете. АКРИЛИК ПЕЙНТ может быть колерован в <br>
+                                неограниченное количество оттенков колеровочной системы.</p>
+                            </div>
+                            <div class="product-card__group">
+                              <p class="product-card__txt"><b>Упаковка</b></p>
+                              <p class="product-card__txt">750 мл/ 3 л/ 10 л</p>
+                            </div>
+                            <button class="btn-reset btn product-card__btn">Заказать</button>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="swiper-button-next production-arrow-next"></div>
+                    <div class="swiper-button-prev production-arrow-prev"></div>
+                  </div>
+                </div>
+                <div class=" tab-pane fade" id="five" role="tabpanel">
+                  <div class="swiper production__slider js-production-slider" id="js-production-slider--five">
+                    <div class="swiper-wrapper">
+                      <div class="swiper-slide">
+                        <div class="product-card">
+                          <div class="product-card__img col-6 offset-1">
+                            <img src="assets/img/pr-01.png" alt="">
+                          </div>
+                          <div class="product-card__info col-md-6">
+                            <p class="product-card__title">Acrylic paint</p>
+                            <p class="product-card__description">Премиум, 100% акриловая эмульсионная краска</p>
+                            <div class="product-card__group">
+                              <p class="product-card__txt"><b>Применение</b></p>
+                              <p class="product-card__txt">Наносится на чистую сухую, прогрунтованную поверхность.</p>
+                              <p class="product-card__txt">Наилучший результат достигается при нанесении в два слоя.</p>
+                              <p class="product-card__txt">12-14 м²/л на гладкую поверхность при однослойном покрытии. </p>
+                            </div>
+                            <div class="product-card__group">
+                              <p class="product-card__txt"><b>Высыхание – Нанесение последующего слоя:</b></p>
+                              <p class="product-card__txt">При температуре +20 ºС <br>
+                                время высыхания до отлипа составляет 1-2 часа. Второй слой наносится через 3-4 часа. В
+                                прохладных и влажных условиях допускается более длительное время сушки. Во время нанесения
+                                и высыхания температура должна быть не ниже + 10°С.</p>
+                              <p class="product-card__txt">Без запаха.</p>
+                            </div>
+                            <div class="product-card__group">
+                              <p class="product-card__txt"><b>Цветовые оттенки:</b></p>
+                              <p class="product-card__txt">Доступна в белом цвете. АКРИЛИК ПЕЙНТ может быть колерован в <br>
+                                неограниченное количество оттенков колеровочной системы.</p>
+                            </div>
+                            <div class="product-card__group">
+                              <p class="product-card__txt"><b>Упаковка</b></p>
+                              <p class="product-card__txt">750 мл/ 3 л/ 10 л</p>
+                            </div>
+                            <button class="btn-reset btn product-card__btn">Заказать</button>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="swiper-button-next production-arrow-next"></div>
+                    <div class="swiper-button-prev production-arrow-prev"></div>
+                  </div>
+                </div>
+                <div class=" tab-pane fade" id="six" role="tabpanel">
+                  <div class="swiper production__slider js-production-slider" id="js-production-slider--six">
+                    <div class="swiper-wrapper">
+                      <div class="swiper-slide">
+                        <div class="product-card">
+                          <div class="product-card__img col-6 offset-1">
+                            <img src="assets/img/pr-01.png" alt="">
+                          </div>
+                          <div class="product-card__info col-md-6">
+                            <p class="product-card__title">Acrylic paint</p>
+                            <p class="product-card__description">Премиум, 100% акриловая эмульсионная краска</p>
+                            <div class="product-card__group">
+                              <p class="product-card__txt"><b>Применение</b></p>
+                              <p class="product-card__txt">Наносится на чистую сухую, прогрунтованную поверхность.</p>
+                              <p class="product-card__txt">Наилучший результат достигается при нанесении в два слоя.</p>
+                              <p class="product-card__txt">12-14 м²/л на гладкую поверхность при однослойном покрытии. </p>
+                            </div>
+                            <div class="product-card__group">
+                              <p class="product-card__txt"><b>Высыхание – Нанесение последующего слоя:</b></p>
+                              <p class="product-card__txt">При температуре +20 ºС <br>
+                                время высыхания до отлипа составляет 1-2 часа. Второй слой наносится через 3-4 часа. В
+                                прохладных и влажных условиях допускается более длительное время сушки. Во время нанесения
+                                и высыхания температура должна быть не ниже + 10°С.</p>
+                              <p class="product-card__txt">Без запаха.</p>
+                            </div>
+                            <div class="product-card__group">
+                              <p class="product-card__txt"><b>Цветовые оттенки:</b></p>
+                              <p class="product-card__txt">Доступна в белом цвете. АКРИЛИК ПЕЙНТ может быть колерован в <br>
+                                неограниченное количество оттенков колеровочной системы.</p>
+                            </div>
+                            <div class="product-card__group">
+                              <p class="product-card__txt"><b>Упаковка</b></p>
+                              <p class="product-card__txt">750 мл/ 3 л/ 10 л</p>
+                            </div>
+                            <button class="btn-reset btn product-card__btn">Заказать</button>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="swiper-button-next production-arrow-next"></div>
+                    <div class="swiper-button-prev production-arrow-prev"></div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+        
+        <div class="palette">
+          <section class="advice advice_man">
+            <div class="container advice__container">
+              <div class="row">
+                <div class="col-8 col-sm-6 col-lg-7 offset-md-1">
+                  <h2 class="advice__title">Нужен совет профессионального консультанта?</h2>
+                  <button class="btn-reset btn advice__btn">Получить консультацию</button>
+                </div>
+                <div class="col-lg-4 advice__bg d-none d-lg-block">
+                  <img src="assets/img/advice-img.png" alt="" class="advice__img">
+                </div>
+              </div>
+            </div>
+          </section>
+          <section class="colors" id="colors">
+            <div class="container">
+              <div class="row">
+                <div class="col-lg-7">
+                  <h2 class="title-h2 colors__title">Большой выбор цветов и оттенков для интерьеров помещений и для фасадов</h2>
+                  <p>VERNILAC создал для вас новую коллекцию цветов Colorvision из более чем 2000 оттенков, которые сделают
+                    обновление вашего дома приятной игрой и удивят прекрасным результатом.</p>
+                  <p>Кроме этого, мы можем колеровать наши краски по популярным палитрам других европейских производителей.</p>
+                </div>
+              </div>
+            </div>
+          </section>
+        </div>
+        
+        <section class="want" id="partners">
+          <div class="container">
+            <div class="row align-items-center">
+              <div class="col-lg-5 order-1 order-lg-0">
+                <form action="" class="want__form form">
+                  <div class="want__inner">
+                    <p class="want__caption form__caption want__caption_dp">Свяжитесь напрямую с руководителем отдела продаж</p>
+                    <p class="want__caption form__caption want__caption_mobile">Руководитель отдела
+                      продаж <br>
+                      Алексей Котин</p>
+                    <label for="name" class="form__label">
+                      <input type="text"
+                             name="name"
+                             id="name"
+                             class="form__input want__input"
+                             placeholder="Ваше имя"
+                             required
+                      >
+                    </label>
+                    <label for="phone" class="form__label">
+                      <input type="tel"
+                             name="phone"
+                             id="phone"
+                             class="form__input want__input phone-mask"
+                             placeholder="Номер телефона"
+                             inputmode="numeric"
+                             required
+                      >
+                    </label>
+                    <button class="btn-reset btn form__submit want__btn" type="submit">Связаться напрямую <br>с руководителем
+                    </button>
+                    <label for="conf" class="checkbox__label form__label">
+                      <input type="checkbox" name="conf" id="conf" class="checkbox" checked>
+                      <span class="checkbox__pane"></span>
+                      Я принимаю условия
+                      <a href="/">политики конфиденциальности</a>
+                    </label>
+                  </div>
+                </form>
+              </div>
+              <div class="col-lg-3 offset-lg-2">
+                <h2 class="title-h2 want__title">Хотите стать нашим партнером?</h2>
+              </div>
+            </div>
+          </div>
+        </section>
+        
+        <section class="advantages">
+          <div class="container">
+            <div class="row">
+              <div class="col-12">
+                <h2 class="title-h2 title-h2_center advantages__title">Наши преимущества</h2>
+              </div>
+            </div>
+            <div class="row align-items-center advantages__list">
+              <div class="col-md-6 order-md-0">
+                <img src="assets/img/vd-01.jpg" alt="" class="advantages__img">
+              </div>
+              <div class="col-md-5 order-md-0 order-1">
+                <p class="advantages__number">01</p>
+                <p class="advantages__description">Европейский производитель с более чем 60 летней историей. Высококачественное
+                  сырье от мирового лидера – компании BASF.</p>
+                <p class="advantages__description">Уверенность в предсказуемости результатов вашей работы.</p>
+              </div>
+              <div class="col-md-6 order-md-0 order-3">
+                <p class="advantages__number">02</p>
+                <p class="advantages__description">VERNILAC – это высокий уровень контроля
+                  качества, в соответствии с международным стандартом ISO 9001, для соблюдения свойств и характеристик
+                  производимой продукции. Наши продукты сертифицированы и соответствуют высоким экологическим стандартам
+                  Европейского союза, а также отмечены знаками Ecolable и EMAS.</p>
+              </div>
+              <div class="col-md-6 order-md-0 order-2">
+                <img src="assets/img/vd-02.jpg" alt="" class="advantages__img">
+              </div>
+              <div class="col-md-6 order-md-0 order-4">
+                <img src="assets/img/vd-03.jpg" alt="" class="advantages__img">
+              </div>
+              <div class="col-md-5 order-md-0 order-5">
+                <p class="advantages__number">03</p>
+                <p class="advantages__description">Импортный продукт, яркий бренд,
+                  отличное сочетание цена-качество. Матовые краски с высокой белизной, низким расходом и превосходными
+                  цвето-износостойкостью.</p>
+              </div>
+              <div class="col-md-6 order-md-0 order-7">
+                <p class="advantages__number">04</p>
+                <p class="advantages__description">Присутствие бренда в России с 2001
+                  года. Отлаженная цепочка поставок. Тысячи довольных клиентов. Постоянное
+                  расширение ассортимента и адаптация материалов к Российским условиям.</p>
+              </div>
+              <div class="col-md-6 order-md-0 order-6">
+                <img src="assets/img/vd-04.jpg" alt="" class="advantages__img">
+              </div>
+            </div>
+          </div>
+        </section>
+        
+        <section class="about" id="about">
+          <div class="about__inner">
+            <div class="container">
+              <div class="row">
+                <div class="col-lg-7">
+                  <h2 class="title-h2 about__title">VERNILAC&nbsp;- собственное <br> производство в Греции <br>
+                    площадью 30&nbsp;000&nbsp;м2</h2>
+                  <div class="about__item">
+                    <div class="about__round">
+                      <svg width="70" height="71">
+                        <use xlink:href="assets/img/sprite.svg#ab-icon-01"></use>
+                      </svg>
+                    </div>
+                    <div class="about__text">
+                      <p>Гордость VERNILAC – <b>современное автоматизированное производство и технический персонал</b> –
+                        эксперты
+                        с большим опытом и обширными знаниями.</p>
+                    </div>
+                  </div>
+                  <div class="about__item">
+                    <div class="about__round">
+                      <svg width="59" height="59">
+                        <use xlink:href="assets/img/sprite.svg#ab-icon-02"></use>
+                      </svg>
+                    </div>
+                    <div class="about__text">
+                      <p><b>Берем на себя 2 гарантийных обязательства</b>, которые не могут позволить себе другие производители
+                        и
+                        закрепляем их в договоре.</p>
+                      <ol>
+                        <li>Гарантия на сроки доставки</li>
+                        <li>Строгое соответствие протоколу ISO 9001</li>
+                      </ol>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+        
+        <section class="exhibition">
+          <div class="container exhibition__container">
+            <div class="row">
+              <div class="col-lg-8 offset-lg-2">
+                <h2 class="title-h2 title-h2_center exhibition__title">Ежегодно принимаем
+                  участие в международных выставках</h2>
+              </div>
+              <div class="col-12">
+                <div class="exhibition__slider js-exhibition-slider swiper">
+                  <div class="swiper-wrapper">
+                    <div class="swiper-slide">
+                      <div class="exhibition__item"><img src="assets/img/eh-01.jpg" alt="" class="exhibition__img">
+                        <p class="exhibition__caption">Последняя выставка <br>
+                          BIG5 в Дубае 2023</p>
+                      </div>
+                    </div>
+                    <div class="swiper-slide">
+                      <div class="exhibition__item"><img src="assets/img/eh-02.jpg" alt="" class="exhibition__img">
+                        <p class="exhibition__caption">Последняя выставка <br>
+                          BIG5 в Дубае 2023</p>
+                      </div>
+                    </div>
+                    <div class="swiper-slide">
+                      <div class="exhibition__item"><img src="assets/img/eh-03.jpg" alt="" class="exhibition__img">
+                        <p class="exhibition__caption">Последняя выставка <br>
+                          BIG5 в Дубае 2023</p>
+                      </div>
+                    </div>
+                    <div class="swiper-slide">
+                      <div class="exhibition__item"><img src="assets/img/eh-01.jpg" alt="" class="exhibition__img">
+                        <p class="exhibition__caption">Последняя выставка <br>
+                          BIG5 в Дубае 2023</p>
+                      </div>
+                    </div>
+                    <div class="swiper-slide">
+                      <div class="exhibition__item"><img src="assets/img/eh-02.jpg" alt="" class="exhibition__img">
+                        <p class="exhibition__caption">Последняя выставка <br>
+                          BIG5 в Дубае 2023</p>
+                      </div>
+                    </div>
+                    <div class="swiper-slide">
+                      <div class="exhibition__item"><img src="assets/img/eh-03.jpg" alt="" class="exhibition__img">
+                        <p class="exhibition__caption">Последняя выставка <br>
+                          BIG5 в Дубае 2023</p>
+                      </div>
+                    </div>
+                  </div>
+        
+                </div>
+              </div>
+            </div>
+            <div class="swiper-button-next exhibition-arrow-next"></div>
+            <div class="swiper-button-prev exhibition-arrow-prev"></div>
+          </div>
+        </section>
+        
+        <section class="service">
+          <div class="container">
+            <div class="row">
+              <div class="col-12">
+                <h2 class="title-h2 title-h2_center service__title">Обращаясь к нам, вы получаете ﻿сервис «под ключ»,
+                  в случае необходимости</h2>
+              </div>
+              <div class="col-md-4">
+                <div class="service__item">
+                  <svg height="94px" class="service__icon">
+                    <use xlink:href="assets/img/sprite.svg#srv-icon-01"></use>
+                  </svg>
+                  <p class="service__caption"><b>Подберем бригаду</b> исходя
+                    <span>из вашего проекта и бюджета</span></p>
+                </div>
+              </div>
+              <div class="col-md-4">
+                <div class="service__item">
+                  <svg height="94px" class="service__icon">
+                    <use xlink:href="assets/img/sprite.svg#srv-icon-02"></use>
+                  </svg>
+                  <p class="service__caption"><b>Поможем подобрать оттенки</b>
+                    <span>и предоставим образцы</span></p>
+                </div>
+              </div>
+              <div class="col-md-4">
+                <div class="service__item">
+                  <svg height="94px" class="service__icon">
+                    <use xlink:href="assets/img/sprite.svg#srv-icon-03"></use>
+                  </svg>
+                  <p class="service__caption"><b>Гарантия на</b>
+                    <span>выполненные работы</span></p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+        
+        <section class="example" id="example">
+          <div class="container">
+            <div class="row">
+              <div class="col-lg-4 offset-lg-4">
+                <h2 class="title-h2 title-h2_center example__title">Примеры работ</h2>
+              </div>
+            </div>
+          </div>
+          <div class="example__slider js-example-slider swiper">
+            <div class="swiper-wrapper">
+              <div class="swiper-slide"><img src="assets/img/exp-01.jpg" alt="" class="example__img"></div>
+              <div class="swiper-slide"><img src="assets/img/exp-02.jpg" alt="" class="example__img"></div>
+              <div class="swiper-slide"><img src="assets/img/exp-03.jpg" alt="" class="example__img"></div>
+              <div class="swiper-slide"><img src="assets/img/exp-01.jpg" alt="" class="example__img"></div>
+              <div class="swiper-slide"><img src="assets/img/exp-02.jpg" alt="" class="example__img"></div>
+              <div class="swiper-slide"><img src="assets/img/exp-03.jpg" alt="" class="example__img"></div>
+              <div class="swiper-slide"><img src="assets/img/exp-01.jpg" alt="" class="example__img"></div>
+              <div class="swiper-slide"><img src="assets/img/exp-02.jpg" alt="" class="example__img"></div>
+              <div class="swiper-slide"><img src="assets/img/exp-03.jpg" alt="" class="example__img"></div>
+            </div>
+            <div class="swiper-button-next example-arrow-next"></div>
+            <div class="swiper-button-prev example-arrow-prev"></div>
+          </div>
+        </section>
+        
+        <section class="reviews" id="reviews">
+          <div class="container">
+            <div class="row">
+              <div class="col-lg-10 offset-lg-1">
+                <h2 class="title-h2 title-h2_center reviews__title">Качество краски подтверждает рейтинг
+                  Vernilak 4.9 баллов из 5 на Яндекс картах</h2>
+              </div>
+            </div>
+          </div>
+          <div class="reviews__slider js-reviews-slider swiper">
+            <div class="swiper-wrapper">
+              <div class="swiper-slide">
+                <img src="assets/img/rev-01.jpg" alt="" class="reviews__img">
+              </div>
+              <div class="swiper-slide">
+                <img src="assets/img/rev-01.jpg" alt="" class="reviews__img">
+              </div>
+              <div class="swiper-slide">
+                <img src="assets/img/rev-01.jpg" alt="" class="reviews__img">
+              </div>
+              <div class="swiper-slide">
+                <img src="assets/img/rev-01.jpg" alt="" class="reviews__img">
+              </div>
+              <div class="swiper-slide">
+                <img src="assets/img/rev-01.jpg" alt="" class="reviews__img">
+              </div>
+              <div class="swiper-slide">
+                <img src="assets/img/rev-01.jpg" alt="" class="reviews__img">
+              </div>
+              <div class="swiper-slide">
+                <img src="assets/img/rev-01.jpg" alt="" class="reviews__img">
+              </div>
+              <div class="swiper-slide">
+                <img src="assets/img/rev-01.jpg" alt="" class="reviews__img">
+              </div>
+            </div>
+          </div>
+          <section class="advice advice_women">
+            <div class="container advice__container advice__container_women">
+              <div class="row">
+                <div class="col-9 col-sm-6 offset-lg-1">
+                  <h2 class="advice__title m-0">Распродажа со склада на краску Vernilac&nbsp;линейки Х</h2>
+                  <p class="advice__subtitle">Получить каталог акционных позиций</p>
+                  <button class="btn-reset btn advice__btn">Получить каталог акционных позиций</button>
+                </div>
+                <div class="col-lg-4 advice__bg d-none d-lg-block">
+                  <img src="assets/img/advice-img-woman.png" alt="" class="advice__img">
+                </div>
+              </div>
+            </div>
+          </section>
+        </section>
+        
+        <section class="partners" id="contacts">
+          <div class="container">
+            <div class="row">
+              <div class="col-lg-8 offset-lg-2">
+                <h2 class="title-h2 title-h2_center partners__title">Приезжайте на индивидуальный
+                  показ материалов</h2>
+                <p class="partners__subtitle">Магазины партнеров в Москве</p>
+              </div>
+            </div>
+            <div class="row justify-content-center partners__list">
+              <div class="col-md-3">
+                <div class="partners__item  js-change-location" data-map="ИП ЧУГУНОВ">
+                  <div class="partners__heading " data-toggle="collapse" data-target="#pt-01">
+                    <p class="partners__number">1.</p>
+                    <p class="partners__caption">ИП ЧУГУНОВ</p>
+                  </div>
+                  <div class="partners__descr" id="pt-01">
+                    <p class="partners__info"><b>Адрес офиса:</b> 26-й км Новорижского ш, ТЦ Строительный двор Петровский, пав.
+                      Е-4</p>
+                    <p class="partners__info partners__info_phone"><b>Телефоны:</b></p>
+                    <a href="tel:84956645217" class="partners__phone">8 495 664-52-17</a>
+                    <a href="tel:89261624903" class="partners__phone">8 926 162 49 03</a>
+                    <img class="partners__img" src="assets/img/mobile-map-01.jpg" alt="">
+                  </div>
+                </div>
+              </div>
+              <div class="col-md-3">
+                <div class="partners__item  js-change-location" data-map="ИП УСОЛЬЦЕВА">
+                  <div class="partners__heading " data-toggle="collapse" data-target="#pt-02">
+                    <p class="partners__number">2.</p>
+                    <p class="partners__caption">ИП УСОЛЬЦЕВА</p>
+                  </div>
+                  <div class="partners__descr" id="pt-02">
+                    <p class="partners__info"><b>Адрес офиса:</b> 26-й км Новорижского ш, ТЦ Строительный двор Петровский, пав.
+                      Г-32</p>
+                    <p class="partners__info partners__info_phone"><b>Телефоны:</b></p>
+                    <a href="tel:89264931166" class="partners__phone">8 926 493 11 66</a>
+                    <a href="tel:89260861056" class="partners__phone">8 926 086 10 56</a>
+                     <img class="partners__img" src="assets/img/mobile-map-01.jpg" alt="">
+                  </div>
+                </div>
+              </div>
+              <div class="col-md-3">
+                <div class="partners__item  js-change-location" data-map="ИП ЦЫГАНОВА">
+                  <div class="partners__heading " data-toggle="collapse" data-target="#pt-03">
+                    <p class="partners__number">3.</p>
+                    <p class="partners__caption">ИП ЦЫГАНОВА</p>
+                  </div>
+                  <div class="partners__descr" id="pt-03">
+                    <p class="partners__info"><b>Адрес офиса:</b> 41-й км МКАД, внешняя сторона, строительный рынок "Мельница",
+                      пав. Е-6/4</p>
+                    <p class="partners__info partners__info_phone"><b>Телефоны:</b></p>
+                    <a href="tel:89265057372" class="partners__phone">8 926 505 73 72</a>
+                    <a href="tel:89776103192" class="partners__phone">8 977 610 31 92</a>
+                     <img class="partners__img" src="assets/img/mobile-map-01.jpg" alt="">
+                  </div>
+                </div>
+              </div>
+              <div class="col-md-3">
+                <div class="partners__item  js-change-location" data-map="LAC TOP">
+                  <div class="partners__heading " data-toggle="collapse" data-target="#pt-04">
+                    <p class="partners__number">4.</p>
+                    <p class="partners__caption">LAC TOP <br>(ИП БУДНИКОВА)</p>
+                  </div>
+                  <div class="partners__descr" id="pt-04">
+                    <p class="partners__info"><b>Адрес офиса:</b> 41-й км МКАД, внешняя сторона, строительный рынок "Мельница",
+                      пав. Б-12/2</p>
+                    <p class="partners__info partners__info_phone"><b>Телефоны:</b></p>
+                    <a href="tel:89251127175" class="partners__phone">8 925 112 71 75</a>
+                     <img class="partners__img" src="assets/img/mobile-map-01.jpg" alt="">
+                  </div>
+                </div>
+              </div>
+              <div class="col-md-4 col-lg-3">
+                <div class="partners__item  js-change-location" data-map="СИМФОНИЯ КРАСОК">
+                  <div class="partners__heading " data-toggle="collapse" data-target="#pt-05">
+                    <p class="partners__number">5.</p>
+                    <p class="partners__caption">СИМФОНИЯ КРАСОК <br>(ИП ОРЕХОВ)</p>
+                  </div>
+                  <div class="partners__descr" id="pt-05">
+                    <p class="partners__info"><b>Адрес офиса:</b> Волгоградский просп., 32, корп. 25, ТЦ Метр квадратный, 1
+                      этаж, павильон №275</p>
+                    <p class="partners__info partners__info_phone"><b>Телефоны:</b></p>
+                    <a href="tel:84959437806" class="partners__phone">8 495 943-78-06</a>
+                    <a href="tel:84954090099" class="partners__phone">8 495 409-00-99</a>
+                     <img class="partners__img" src="assets/img/mobile-map-01.jpg" alt="">
+                  </div>
+                </div>
+              </div>
+              <div class="col-md-3">
+                <div class="partners__item  js-change-location" data-map="ИП БЕЛОВ">
+                  <div class="partners__heading " data-toggle="collapse" data-target="#pt-06">
+                    <p class="partners__number">6.</p>
+                    <p class="partners__caption">ИП БЕЛОВ</p>
+                  </div>
+                  <div class="partners__descr" id="pt-06">
+                    <p class="partners__info"><b>Адрес офиса:</b> ш. Автомагистраль Москва - Нижний Новгород, вл19А,
+                      строительный рынок Владимирский тракт, пав. Ж-15</p>
+                    <p class="partners__info partners__info_phone"><b>Телефоны:</b></p>
+                    <a href="tel:89030001532" class="partners__phone">8 903 000 15 32</a>
+                     <img class="partners__img" src="assets/img/mobile-map-01.jpg" alt="">
+                  </div>
+                </div>
+              </div>
+              <div class="col-md-3">
+                <div class="partners__item  js-change-location" data-map="ООО ОКРАШЕНО">
+                  <div class="partners__heading " data-toggle="collapse" data-target="#pt-07">
+                    <p class="partners__number">7.</p>
+                    <p class="partners__caption">ООО ОКРАШЕНО</p>
+                  </div>
+                  <div class="partners__descr" id="pt-07">
+                    <p class="partners__info"><b>Адрес офиса:</b> 5-й Донской проезд, 23</p>
+                    <p class="partners__info partners__info_phone"><b>Телефоны:</b></p>
+                    <a href="tel:89104782828" class="partners__phone">8 910 478-28-28</a>
+                     <img class="partners__img" src="assets/img/mobile-map-01.jpg" alt="">
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+        
+        <div id="map" class="map" style="width: 100%; height: 450px"></div>
+        
+    </main>
+    <div class="js-stop-header"></div>
+    <footer class="footer">
+      <div class="container">
+        <div class="row align-items-center">
+          <div class="col-md-6">
+            <div class="logo header__logo footer__logo">
+              <a href="" class="logo__img">
+                <img src="assets/img/svg/logo.svg" alt="">
+              </a>
+              <p class="logo__slogan">Производство и продажа краски <br> напрямую с завода в Европе <br>
+                Работаем с 1960 года</p>
+            </div>
+          </div>
+          <div class="col-md-6 text-md-right">
+            <div class="footer__flex">
+              <div>
+                <a href="tel:89265758061" class="header__phone">+7 (926) 575 80 61</a>
+                <p class="header__worktime">с 09:00 до 18:00 без выходных</p>
+              </div>
+              <button class="btn-reset btn footer__btn">Перезвонить мне</button>
+            </div>
+          </div>
+        </div>
+        <div class="row align-items-center justify-content-between mt-md-5">
+          <div class="col-md-6"><a href="" class="footer__link">Политика конфиденциальности</a></div>
+          <div class="col-md-6">
+            <div class="footer__dev">Разработка и продвижение
+              <a class="" href="https://nikto.agency/" target="_blank">
+                <span>nikto.agency</span>
+                <svg width="100" height="16">
+                  <use xlink:href="assets/img/sprite.svg#nikto-logo"></use>
+                </svg>
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </footer>
+    <!-- Modal -->
+    <div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+      <div class="modal-dialog" role="document">
+        <div class="modal-content">
+    
+          <form action="" class="form popup-form">
+            <button type="button" class="close modal__close btn-reset popup-form__close" data-dismiss="modal" aria-label="Close">
+              <span aria-hidden="true">×</span>
+            </button>
+            <div class="form__heading form__caption popup-form__caption">
+              Получить каталог
+              и 5% скидку на
+              первый заказ
+            </div>
+            <div class="form__body">
+              <label for="name" class="form__label">
+                <input type="text"
+                       name="name"
+                       id="name"
+                       class="form__input want__input"
+                       placeholder="Ваше имя"
+                       required
+                >
+              </label>
+              <label for="phone" class="form__label">
+                <input type="tel"
+                       name="phone"
+                       id="phone"
+                       class="form__input want__input phone-mask"
+                       placeholder="Номер телефона"
+                       inputmode="numeric"
+                       required
+                >
+              </label>
+              <button class="btn-reset btn form__submit want__btn" type="submit">Получить каталог и 5% скидку на первый заказ
+              </button>
+              <label for="conf" class="checkbox__label form__label">
+                <input type="checkbox" name="conf" id="conf" class="checkbox" checked>
+                <span class="checkbox__pane"></span>
+                Я принимаю условия
+                <a href="/">политики конфиденциальности</a>
+              </label>
+            </div>
+          </form>
+        </div>
+      </div>
+    </div>
+    <!-- build:js -->
+    <script src="assets/vendor/js/jquery.js"></script>
+    <script src="assets/vendor/js/popper.js"></script>
+    <script src="assets/vendor/js/bootstrap.js"></script>
+    <script src="assets/vendor/js/swiper-bundle.min.js"></script>
+    <script src="assets/vendor/js/inputmask.min.js"></script>
+    <script src="assets/js/util/crossPlatform.js"></script>
+    <script src="assets/js/app.js"></script>
+    
+    <!-- endbuild -->
+</body>
+
+</html>

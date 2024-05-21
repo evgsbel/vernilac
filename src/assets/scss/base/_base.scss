@@ -1,0 +1,147 @@
+// -----------------------------------------------------------------------------
+// This file contains very basic styles.
+// -----------------------------------------------------------------------------
+
+/**
+ * Set up a decent box model on the root element
+ */
+html {
+  box-sizing: border-box;
+}
+
+html,
+body,
+main {
+  margin: 0;
+}
+
+body {
+  background-color: #fff;
+  color: #000;
+  //&.opened-menu {
+  //  @include r(1024) {
+  //  overflow: hidden;
+  //  }
+  //}
+}
+
+
+/**
+ * Make all elements from the DOM inherit from the parent box-sizing
+ * Since `*` has a specificity of 0, it does not override the `html` value
+ * making all elements inheriting from the root box-sizing value
+ * See: https://css-tricks.com/inheriting-box-sizing-probably-slightly-better-best-practice/
+ */
+*,
+*::before,
+*::after {
+  box-sizing: inherit;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+
+  &:hover {
+    text-decoration: none;
+    color: inherit;
+  }
+}
+
+img {
+  max-width: 100%;
+}
+
+.btn-reset {
+  border: none;
+  background-color: transparent;
+  cursor: pointer;
+  padding: 0;
+}
+
+.btn {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  max-width: 100%;
+  height: 56px;
+  padding: 0 16px;
+  font-size: 1em;
+  font-weight: 700;
+  color: #fff;
+  border: 2px solid #EC1C24;
+  border-radius: 90px;
+  background-color: #EC1C24;
+  transition: all $trns;
+  @include r(1280) {
+    height: 45px;
+    padding: 0 12px;
+  }
+  &:hover {
+    color: #fff;
+    background-color: #FF545B;
+    border-color: #FF545B;
+  }
+  &_trnsp {
+    background-color: transparent;
+    &:hover {
+      color: #EC1C24;
+      background-color: transparent;
+      border-color: #EC1C24;
+    }
+  }
+  &:active {
+    background-color: #D10B13;
+    color: #fff;
+    border-color: #D10B13;
+  }
+  &:focus,
+  &:active {
+    outline: none;
+    box-shadow: none;
+  }
+}
+
+.tabs {
+  &__content {
+    display: none;
+    &.is-active {
+      display: block;
+    }
+  }
+}
+
+.lnk {
+  &::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+  }
+}
+
+.desktop-hidden {
+  @include rmin(1024) {
+    display: none;
+  }
+}
+.mobile-hidden {
+  @include r(1024) {
+    display: none;
+  }
+}
+
+.swiper-button-next,
+.swiper-button-prev {
+  color: #000;
+}
+.swiper-button-next::after,
+.swiper-button-prev::after {
+  font-size: 3.625em;
+}
+
+main {
+  overflow-x: hidden;
+}

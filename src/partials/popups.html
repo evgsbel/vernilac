@@ -1,0 +1,47 @@
+<!-- Modal -->
+<div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content">
+
+      <form action="" class="form popup-form">
+        <button type="button" class="close modal__close btn-reset popup-form__close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">×</span>
+        </button>
+        <div class="form__heading form__caption popup-form__caption">
+          Получить каталог
+          и 5% скидку на
+          первый заказ
+        </div>
+        <div class="form__body">
+          <label for="name" class="form__label">
+            <input type="text"
+                   name="name"
+                   id="name"
+                   class="form__input want__input"
+                   placeholder="Ваше имя"
+                   required
+            >
+          </label>
+          <label for="phone" class="form__label">
+            <input type="tel"
+                   name="phone"
+                   id="phone"
+                   class="form__input want__input phone-mask"
+                   placeholder="Номер телефона"
+                   inputmode="numeric"
+                   required
+            >
+          </label>
+          <button class="btn-reset btn form__submit want__btn" type="submit">Получить каталог и 5% скидку на первый заказ
+          </button>
+          <label for="conf" class="checkbox__label form__label">
+            <input type="checkbox" name="conf" id="conf" class="checkbox" checked>
+            <span class="checkbox__pane"></span>
+            Я принимаю условия
+            <a href="/">политики конфиденциальности</a>
+          </label>
+        </div>
+      </form>
+    </div>
+  </div>
+</div>

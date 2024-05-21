@@ -1,0 +1,93 @@
+.footer {
+  padding-top: 121px;
+  padding-bottom: 50px;
+  background-image: url('../img/footer-bg.png');
+  background-repeat: no-repeat;
+  background-size: cover;
+  @include r(768) {
+    padding-bottom: 0;
+  }
+  &__flex {
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    gap: 0 15px;
+    @include r(768) {
+      padding-bottom: 30px;
+      border-bottom: 1px solid rgba(255, 255, 255, 0.25);
+      justify-content: space-between;
+    }
+  }
+  &__link {
+    color: #fff;
+    text-decoration: underline;
+    @include r(768) {
+      display: block;
+      margin-bottom: 30px;
+      padding: 10px 0;
+      text-align: center;
+      font-size: 16px;
+      text-decoration: underline;
+      border-bottom: 1px solid rgba(255, 255, 255, 0.25);
+    }
+    &:hover {
+      text-decoration: none;
+      color: #fff;
+    }
+  }
+  &__dev {
+    position: relative;
+    color: #fff;
+    text-align: right;
+
+    svg {
+      display: none;
+    }
+
+    @include r(768) {
+      width: 100%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      gap: 0 10px;
+      background-color: #EC1C24;
+      padding: 15px 0;
+      text-align: center;
+      font-size: 16px;
+      span {
+        display: none;
+      }
+      svg {
+        display: block;
+      }
+      &::before,
+      &::after {
+        content: '';
+        position: absolute;
+        top: 0;
+        width: 15px;
+        height: 100%;
+        background-color: #EC1C24;
+      }
+      &::before {
+        left: -15px;
+      }
+      &::after {
+        right: -15px;
+      }
+    }
+    a {
+      display: block;
+      color: #fff;
+      text-decoration: underline;
+    }
+
+  }
+  &__logo {
+    @include r(768) {
+      margin-bottom: 30px;
+      padding-bottom: 46px;
+      border-bottom: 1px solid rgba(255, 255, 255, 0.25);
+    }
+  }
+}

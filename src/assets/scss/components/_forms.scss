@@ -1,0 +1,95 @@
+.form {
+  padding: 70px 50px;
+  background-color: #fff;
+  box-shadow: -103px 273px 117px rgba(0, 0, 0, 0.03), -58px 154px 99px rgba(0, 0, 0, 0.1), -26px 68px 73px rgba(0, 0, 0, 0.17), -6px 17px 40px rgba(0, 0, 0, 0.2);
+  &__caption {
+    margin-bottom: 35px;
+    font-weight: 700;
+    font-size: 1.875rem;
+    text-align: center;
+  }
+  &__label {
+    display: block;
+    width: 100%;
+    margin-bottom: 18px;
+  }
+  &__input {
+    width: 100%;
+    background-color: #F2F2F2;
+    border-radius: 90px;
+    color: #000;
+    font-size: 1.125rem;
+    height: 56px;
+    padding-left: 30px;
+    padding-right: 15px;
+    border: none;
+    transition: box-shadow $trns;
+    &::placeholder {
+      color: #616161;
+      font-size: 0.9rem;
+    }
+    &:active,
+    &:focus {
+      box-shadow: 0px 0px 8.7px #2593C7;
+      background-color: #fff;
+      border: none;
+      outline: none;
+    }
+  }
+  &__submit {
+    margin-bottom: 18px;
+    width: 100%;
+    height: 56px;
+  }
+}
+
+//checkbox
+.checkbox {
+  display: none;
+  &__label {
+    position: relative;
+    display: block;
+    padding-left: 36px;
+    font-size: 15px;
+    cursor: pointer;
+    max-width: 70%;
+    margin: 0 auto;
+    @include r(1280) {
+      max-width: 100%;
+    }
+    @include r(1024) {
+      max-width: 70%;
+    }
+    a {
+      display: block;
+      text-decoration: underline;
+    }
+  }
+  & + &__pane {
+    position: absolute;
+    top: 7px;
+    left: 0;
+    width: 24px;
+    height: 24px;
+    background-color:  #EC1C24;
+    border-radius: 50%;
+    transition: border-width .2s ease-in-out;
+  }
+  & + &__pane::before {
+    content: '';
+    position: absolute;
+    top: 7px;
+    right: 0;
+    left: 0;
+    margin: 0 auto;
+    width: 10px;
+    height: 10px;
+    background-color: #fff;
+    border-radius: 50%;
+    opacity: 0;
+    transition: opacity .2s ease-in-out;
+  }
+  &:checked + &__pane::before {
+    opacity: 1;
+  }
+}
